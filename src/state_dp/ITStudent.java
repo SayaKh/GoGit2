@@ -9,21 +9,13 @@ package state_dp;
  *
  * @author Ghada
  */
-class Context {
-    private State state;
-    
-    public Context()
-    {
-        state = null;
-    }
-    public void setState(State stat)
-    {
-        this.state=stat;
+public class ITStudent implements Student{
+
+    @Override
+    public void show(Specialty con) {
+        System.out.println("IT Student!");
+        con.setSpecialty(this);
     }
     
-    public State getState()
-    {
-        return state;
-    }
-    
+
 }

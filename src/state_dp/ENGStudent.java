@@ -9,17 +9,14 @@ package state_dp;
  *
  * @author Ghada
  */
-public class State1 implements State{
+public class ENGStudent implements Student{
 
     @Override
-    public void doAction(Context con) {
-        System.out.println("This is State1 !");
-        con.setState(this);
+    public void show(Specialty con) {
+        System.out.println("Engeering Student !");
+        con.setSpecialty(this);
     }
+ 
     
-    public String toString()
-    {
-        return "State1 !";
-    }
     
 }

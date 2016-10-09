@@ -9,7 +9,7 @@ package state_dp;
  *
  * @author Ghada
  */
-public interface State {
-    public void doAction(Context con);
+public interface Student {
+    public void show(Specialty con);
     
 }

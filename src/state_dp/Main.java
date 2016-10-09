@@ -13,16 +13,19 @@ public class Main {
     
     public static void main (String args [])
     {
-        //object from Context class can take more than one state or behavior at the runtime
-        Context cont = new Context();
+       
+        Specialty sp = new Specialty();
         
-        State1 s1 = new State1();
-        s1.doAction(cont);
-        System.out.println(cont.getState().toString());
+        ITStudent s1 = new ITStudent();
+        s1.show(sp);
         
-        State2 s2= new State2();
-        s2.doAction(cont);
-        System.out.println(cont.getState().toString());
+        
+        ENGStudent s2= new ENGStudent();
+        s2.show(sp);
+        
+        ARTStudent s3 = new ARTStudent();
+        s3.show(sp);
+        
         
     }
     

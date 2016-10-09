@@ -9,17 +9,21 @@ package state_dp;
  *
  * @author Ghada
  */
-public class State2 implements State{
-
-    @Override
-    public void doAction(Context con) {
-        System.out.println("This is state2 !");
-        con.setState(this);
-    }
-    public String toString()
+class Specialty {
+    private Student state;
+    
+    public Specialty()
     {
-        return"State2 !";
+        state = null;
+    }
+    public void setSpecialty(Student stat)
+    {
+        this.state=stat;
     }
     
+    public Student getSpecialty()
+    {
+        return state;
+    }
     
 }
